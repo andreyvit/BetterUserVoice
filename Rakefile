@@ -44,29 +44,20 @@ end
 
 # Building
 
-verbatim   :safari, 'extensions/Safari/BetterUserVoice.safariextension/jquery.js', 'vendor/jquery.js'
-iced       :safari, 'extensions/Safari/BetterUserVoice.safariextension/BetterUserVoice.js', 'src/BetterUserVoice.iced'
-stylus     :safari, 'extensions/Safari/BetterUserVoice.safariextension/BetterUserVoice.css', 'src/BetterUserVoice.styl'
+verbatim   :default, 'extensions/Safari/BetterUserVoice.safariextension/jquery.js', 'vendor/jquery.js'
+iced       :default, 'extensions/Safari/BetterUserVoice.safariextension/BetterUserVoice.js', 'src/BetterUserVoice.iced'
+stylus     :default, 'extensions/Safari/BetterUserVoice.safariextension/BetterUserVoice.css', 'src/BetterUserVoice.styl'
 
-verbatim   :chrome, 'extensions/Chrome/BetterUserVoice/jquery.js', 'vendor/jquery.js'
-iced       :chrome, 'extensions/Chrome/BetterUserVoice/BetterUserVoice.js', 'src/BetterUserVoice.iced'
-stylus     :chrome, 'extensions/Chrome/BetterUserVoice/BetterUserVoice.css', 'src/BetterUserVoice.styl'
-
-desc "Build Safari extension (requires manual packaging from the Safari UI)"
-task :safari
-
-desc "Build and zip Chrome extension"
-task :chrome
-
-desc "Build all extensions"
-task :default => [:safari, :chrome]
+verbatim   :default, 'extensions/Chrome/BetterUserVoice/jquery.js', 'vendor/jquery.js'
+iced       :default, 'extensions/Chrome/BetterUserVoice/BetterUserVoice.js', 'src/BetterUserVoice.iced'
+stylus     :default, 'extensions/Chrome/BetterUserVoice/BetterUserVoice.css', 'src/BetterUserVoice.styl'
 
 
 # Distribution
 
 zip :dist, "dist/#{version}/BetterUserVoice-#{version}-Chrome.zip", 'extensions/Chrome/BetterUserVoice'
 
-desc "Upload Safari extension, zip up Chrome extension"
+desc "Upload Safari extension, zip and upload Chrome extension"
 task 'dist' do
     upload_file "dist", "#{version}/BetterUserVoice-#{version}-Chrome.zip"
     upload_file "dist", "#{version}/BetterUserVoice-#{version}.safariextz"
@@ -81,7 +72,7 @@ def upload_file folder, file
     puts "http://files.tarantsov.com/BetterUserVoice/#{file}"
 end
 
-desc "Upload update manifests"
+desc "Upload Safari update manifest"
 task 'manifest' do
     upload_file 'update', "BetterUserVoice-Safari-update.plist"
 end
