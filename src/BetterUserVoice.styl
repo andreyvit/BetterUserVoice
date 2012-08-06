@@ -1,0 +1,20 @@
+.ticket-actions::after
+    position    absolute
+    left        4px
+    top         13px
+    display     block
+    width       10px
+    height      10px
+    margin-top  -5px
+    line-height 10px
+    font-size   10px
+    text-align  center
+    background  none
+    border      1px solid black
+    content     " "
+
+.better-uservoice-selected-ticket .ticket-actions::after
+  content "✓"
+
+.better-uservoice-selected-ticket
+  background #FC9822 !important
