@@ -7,7 +7,7 @@ Safari/Chrome browser extension that improves UserVoice Admin UI.
 Installation
 ------------
 
-[Download Safari extension](http://files.tarantsov.com/BetterUserVoice/1.0.0/BetterUserVoice-1.0.0.safariextz) / [Get Chrome extension](#)
+[Get Chrome extension](https://chrome.google.com/webstore/detail/kjfhfgeliamlionedcemhchbpmimanem) / [Download Safari extension](http://files.tarantsov.com/BetterUserVoice/1.0.0/BetterUserVoice-1.0.0.safariextz)
 
 
 Features
