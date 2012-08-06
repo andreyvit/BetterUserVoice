@@ -1,0 +1,16 @@
+{
+  "author": "Andrey Tarantsov <andrey@tarantsov.com>",
+  "name": "BetterUserVoice",
+  "description": "UserVoice Admin UI improvements",
+  "version": "1.0.0",
+  "dependencies": {
+    "stylus": "~0.28.2",
+    "iced-coffee-script": "~1.3.3d"
+  },
+  "devDependencies": {},
+  "optionalDependencies": {},
+  "engines": {
+    "node": "*"
+  },
+  "homepage": "https://github.com/andreyvit/BetterUserVoice"
+}
