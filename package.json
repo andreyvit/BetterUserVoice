@@ -4,7 +4,7 @@
   "description": "UserVoice Admin UI improvements",
   "version": "1.0.0",
   "dependencies": {
-    "stylus": "~0.28.2",
+    "stylus": "~0.54.5",
     "iced-coffee-script": "~1.3.3d"
   },
   "devDependencies": {},
