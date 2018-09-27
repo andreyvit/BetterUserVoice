@@ -1,6 +1,8 @@
 BetterUserVoice
 ===============
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/andreyvit/BetterUserVoice.svg)](https://greenkeeper.io/)
+
 Safari/Chrome browser extension that improves UserVoice Admin UI.
 
 
